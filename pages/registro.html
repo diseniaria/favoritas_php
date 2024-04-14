@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis favoritos</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">
+                <img src="../assets/images/mis favoritos logo.png" alt="logo mis favoritos" width="300">
+                </a>
+            </nav>
+        </header>
+        <main>
+            <h1>REGISTRO</h1>
+            <form action="validad.php" method="post">
+                    <div>
+                        <label for="name">Ingrese su nombre:</label>
+                        <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Ingrese su apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <label for="email">Ingrese su mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Mail" required>
+                    </div>
+                    <div>
+                        <label for="password">Ingrese su contraseña:</label>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <div>
+                        <label for="Nacimiento">Ingrese su fechad de nacimiento:</label>
+                        <input type="date" name="nacimiento" id="nacimiento">
+                    </div>
+                    <div>
+                        <label for="">Ingrese su país:</label>
+                        <select name="pais" id="pais">
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10">Cometarios</textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1" name="terminos">
+                        <label for="terminos">Acepte térmnos y condiciones </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="REGISTRARME">
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Edad</th>
+                            </tr>
+                            <tr>
+                                <td>Daniela</td>
+                                <td>Scheimberg</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>Yoon</td>
+                                <td>Seri</td>
+                                <td>23</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </form>
+        </main>
+        <footer>
+            este es el pie de pagina
+        </footer>
+    </body>
+    </html>
