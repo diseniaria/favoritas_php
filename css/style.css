@@ -1,8 +1,329 @@
+/*reseteo de valores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*configuracion de variables*/
+:root{
+    --main-color: #f3f3f3;
+    --secondary-color: #161516;
+    --third-color: #fce7ab;
+}
+/*estilos del body*/
+body{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+/*generalidades*/
 h1{
-    color:red;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
 }
-p{
-    color:blueviolet;
-    font-size: 15px;
-    background-color: yellowgreen;
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
+/*media querys para dispositivos hasta 800px para el h1 y h2*/
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+
+}
+
+header,footer{
+    background-color: var(--third-color);
+    color: var(--main-color);
+    padding: 20px;
+}
+/*estilos del header*/
+
+.header{
+    height: 15vh;
+    position:sticky;
+    top:0; 
+    z-index: 10; 
+    .navPrincipal{
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 80px;
+        a{
+            display:flex;
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-size:1.6rem;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+            column-gap: 20px;
+            a{
+                font-size:1.4rem;
+            }
+           
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+   .header{
+      height:initial;
+      nav{
+        flex-direction: column;
+        row-gap: 20px;
+        ul{
+            flex-direction: column;
+            row-gap: 10px;
+        }
+      }
+
+   }
+    
+}
+/*main
+estilos seccion principal
+*/
+.seccionPrincipal{
+    height: 60vh;
+    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/images/banner-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    .contenedorPrincipal{
+        text-align: center;
+        /*efecto blur a un contenedor*/
+        backdrop-filter: blur(5px);
+        width: 40%;
+        margin:0 auto;
+        border-radius: 5px;
+        a{
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color:var(--main-color);
+            font-size: 2rem;
+            border:2px solid var(--main-color);
+            border-radius: 5px;
+            padding:10px 20px;
+        }
+    }
+}
+.seccionBuscador{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        background-color: rgb(80, 1, 1);
+        input {
+            border: 1px solid rgb(10, 10, 10);
+            border-radius: 25px;
+            color: #000000;
+            font-size: 1rem;
+            height: 35px;
+            margin: 5px;
+            padding: 0px 20px;
+
+        }
+        }
+
+@media screen and (max-width: 800px) {
+    .seccionPrincipal{
+        height: 75vh;
+        background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/bg_mobile.jpg");
+        .contenedorTitulos{
+            width: 90%;
+            backdrop-filter:initial;
+            a{/*boton de registrarse de la seccion de arriba*/
+                font-size: 1.5rem;
+            }
+        }
+    }
+  
+}
+.peliculasClasicas{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+    h2{
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+    .galeriaClasicos{
+        display:flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        div{
+            width: 250px;
+            height: 350px;
+            border-radius: 5px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    .boton{
+        display:flex;
+        justify-content: center;
+        gap:20px;
+        padding: 30px;
+        button {
+            height: 30px;
+            width: 80px;
+        }
+        
+    }
+}
+/*estilos de section peliculas aclamadas*/
+.basadasEnLibros{
+    width: 80%;
+    margin:0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    h2{
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+    .galeriaBasadasEnLibros{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        column-gap: 30px;
+        div{
+            width: 220px;
+            height: 350px;
+            flex-shrink: 0;
+            box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
+           
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+    footer{
+        height: 12vh;
+        nav{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        ul{
+            display: flex;
+            align-items: baseline;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.4em;
+        }
+        p{
+            text-align: center;
+            font-size: 0.9em;
+            color: black
+        }
+   
+    }
+
+    /* aqui comienza el estilo del contenedorGeneral de la pagina detalle*/
+    
+    .tituloDetalle{
+        padding: 20px;
+    }
+
+    .contenedorGeneral{
+        display: flex;
+        .imagenDetalle{
+            width: 500px;
+            padding-left: 20px;
+        }
+
+            .datosDetalle{
+                font-size: 20px;
+                padding-left: 30px;
+
+            }
+          
+
+
+    }
+
+    .tituloResenia{
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .detalle{
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .contenedorVideo{
+        display: flex;
+        height: 50vh;
+        width: 95vh;
+    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/images/video-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        iframe{
+            padding: 20px 50px 10px 20px;
+        }
+
+
+    }
+    .botonFooter{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        button {
+            height: 30px;
+            width: 80px;
+        }
+    }
+
+    .tabla{
+        display:flex;
+        justify-content:center;
+        align-items:end;
+        padding:100px;
+        th {
+            text-align: left;
+            font-size: large;
+           }
+        }
+
+.position{
+  display: flex;
+  justify-content: flex-end;
+}
+    

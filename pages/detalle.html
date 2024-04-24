@@ -7,19 +7,37 @@
             <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
             <link rel="stylesheet" href="../css/style.css">
         </head>
+
         <body>
-            <header>
-                <nav>
+            <header class="header">
+                <nav class="navPrincipal">
+                    <a href="index.html">
+                        <img src="../assets/images/mis favoritos logo.png" alt="logo mis favoritos" width="300">
+                        </a>         
+                        <ul class="lista_nav">                   
+                            <li ><a  href="../index.html">Clásicos</a></li>
+                            <li ><a  href="../pages/registro.html">Registrarse</a></li>
+                            <li ><a  href="../pages/inicioSesion.html">Iniciar Sesión</a></li>
+                        </ul>
                 </nav>
-                <div>
-                    <h1>Detalle de Before Sunrise</h1>
-                    <img src="../assets/images/peli_1.jpg" alt="Before Sunset" width="200">
-                    <p>Título: Before Sunrise (Antes del amanecer), Director: Richard Linklater, Año: 1995, Duración: 101 minutos </p>
-                    <h2>Reseña</h2>
-                    <p>Céline (Julie Delpy) es una estudiante francesa que va a visitar a su abuela en Budapest. Jesse (Ethan Hawke) es un joven estadounidense que realiza un viaje a través de Europa después de ser abandonado por su novia a quien realmente fue a visitar a España. Ambos se encuentran en un tren, en el trayecto entre Budapest y Viena. Llegados a Viena, Jesse debe descender, sin embargo, logra convencer a Céline para que pase una noche con él en la capital austríaca. En el curso de esa noche, se conocen a fondo, discuten y revelan cuestiones diversas como la vida, la muerte, el amor y el sexo. Visitan muchos lugares de Viena mientras conversan y se dan un beso mientras disfrutan del paisaje. Al día siguiente deben separarse. Pero en el último momento, mientras Céline se apresta a abordar el tren, deciden reencontrarse en el mismo lugar (la estación de Viena), a la misma hora, seis meses más tarde sin pasarse ningún dato de contacto..</p>
-                </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JcrefN9QKuQ?si=-_9vOUAlhrBgOufV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <table>
+          
+             </header>
+             <main>
+                <h1 class="tituloDetalle"> Detalle de Before Sunrise</h1>
+                <div class="contenedorGeneral">
+                        
+                         <img class="imagenDetalle" src="../assets/images/peli_1.jpg" alt="Before Sunset" width="200">
+                        <p class="datosDetalle"> Título: Before Sunrise<br> (Antes del amanecer)<br> Director: Richard Linklater<br> Año: 1995<br> Duración: 101 minutos</p> 
+                </div>      
+
+                        <h2 class="tituloResenia">Reseña</h2>
+                        
+                        <p class="detalle">Céline (Julie Delpy) es una estudiante francesa que va a visitar a su abuela en Budapest. Jesse (Ethan Hawke) es un joven estadounidense que realiza un viaje a través de Europa después de ser abandonado por su novia a quien realmente fue a visitar a España. Ambos se encuentran en un tren, en el trayecto entre Budapest y Viena. Llegados a Viena, Jesse debe descender, sin embargo, logra convencer a Céline para que pase una noche con él en la capital austríaca. En el curso de esa noche, se conocen a fondo, discuten y revelan cuestiones diversas como la vida, la muerte, el amor y el sexo. Visitan muchos lugares de Viena mientras conversan y se dan un beso mientras disfrutan del paisaje. Al día siguiente deben separarse. Pero en el último momento, mientras Céline se apresta a abordar el tren, deciden reencontrarse en el mismo lugar (la estación de Viena), a la misma hora, seis meses más tarde sin pasarse ningún dato de contacto..</p> 
+               
+                <div class="contenedorVideo">
+                <iframe width="760" height="515" src="https://www.youtube.com/embed/JcrefN9QKuQ?si=-_9vOUAlhrBgOufV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <table class="tabla">
                     <tr>
                     <th>Actor</th>
                     <th>Actríz</th>
@@ -31,10 +49,27 @@
                     <td>Richard Linklater</td>
                     </tr>
                 </table>
+                
+                </div>
+            </main>
             </header>
+
             <footer>
+                <div class="botonFooter">
                 <a href="../index.html"> <button>Volver</button></a>
-               
+                </div>
+                    <nav>
+                        <ul>
+                            <li ><a  href="">Términos y condiciones</a></li>
+                            <li ><a  href="">Preguntas frecuentes</a></li>
+                            <li ><a  href="">Ayuda</a></li>
+                            <li ><a  href="">Administrador Peliculas</a></li>
+                        </ul>
+                    </nav>
+                        <a href="#main">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                        <p>todos los derechos reservados</p>
             </footer>
         </body>
         </html>

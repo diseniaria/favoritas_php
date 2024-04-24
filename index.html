@@ -9,18 +9,19 @@
                 <link rel="stylesheet" href="./css/style.css">
             </head>
             <body>
-                <header>
-                    <nav>
-                        <a href="index.html">
-                        <img src="./assets/images/mis favoritos logo.png" alt="logo mis favoritos" width="300">
-                        </a>
-                        <ul>
-                                 <li ><a  href="#clasicos">Clásicos</a></li>
-                                 <li ><a  href="./pages/registro.html">Registrarse</a></li>
-                                 <li ><a  href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                    <header class="header">
+                        <nav class="navPrincipal">
+                            <a href="index.html">
+                                <img src="./assets/images/mis favoritos logo.png" alt="logo mis favoritos" width="300">
+                                </a>         
+                                <ul class="lista_nav">                   
+                                    <li ><a  href="#clasicos">Clásicos</a></li>
+                                    <li ><a  href="./pages/registro.html">Registrarse</a></li>
+                                    <li ><a  href="./pages/inicioSesion.html">Iniciar Sesión</a></li>
+                                </ul>
+                        </nav>
+                  
+                     </header>
                 <main id="main" >
                     <section class="seccionPrincipal">
                         <div class="contenedorPrincipal">
@@ -30,15 +31,16 @@
                         <a href="./pages/registro.html">Registrate</a>
                         </div>
                     </section>
-                    <section>
+
+                    <section class="seccionBuscador">
                         <h2>¿Qué tenés ganas de ver?</h2>
-                        <form action="">
-                        <input type="text" placeholder="Buscar" id="buscar" name="buscar" required>
-                        <input type="submit" value="Buscar" id="btnBuscar" name="btnBuscar">
+                        <form >
+                            <input type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                            <input type="submit" value="Buscar">
                         </form>
-                        <hr>
                     </section>
-                    <div id="clasicos" class="peliculasclasicas">
+                    <hr>
+                    <id="clasicos" class="peliculasClasicas">
                         <h2>Clásicos</h2>
                         <div class="galeriaClasicos">
                             <div>
@@ -46,52 +48,49 @@
                             <img src="./assets/images/peli_1.jpg" alt="Before Sunrise" width="300" loading="lazy">
                             </a>
                             </div>
-                        </div>
                             <div>
-                             <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_2.jpg" alt="Before Sunset" width="300">
-                            </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                            <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_3.jpg" alt="Before Midnight" width="300"> 
-                            </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                            <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_4.jpg" alt="12 Angry men" width="300"> 
-                            </a>
-                            </div>
-                            <div>
-                            <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_5.jpg" alt="500 days of summer" width="300" loading="lazy">
-                            </a>
-                            </div>
-                            <div>
-                            <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_6.jpg" alt="Amelie" width="300" loading="lazy">
-                            </a>
-                            </div>
-                            <div>
-                            <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_7.jpg" alt="Midnight in Paris" width="300" loading="lazy">
-                            </a>
-                            </div>
-                            <div>
-                            <a href="./pages/detalle.html">
-                            <img src="./assets/images/peli_8.jpg" alt="Fight Club" width="300" loading="lazy">
-                            </a>
-                            </div>
-                        </div>
+                                <a href="./pages/detalle.html">
+                               <img src="./assets/images/peli_2.jpg" alt="Before Sunset" width="300">
+                               </a>
+                               </div>
+                               <div>
+                                <a href="./pages/detalle.html">
+                                <img src="./assets/images/peli_3.jpg" alt="Before Midnight" width="300"> 
+                                </a>
+                                </div>
+                                <div>
+                                    <a href="./pages/detalle.html">
+                                    <img src="./assets/images/peli_4.jpg" alt="12 Angry men" width="300"> 
+                                    </a>
+                                    </div>
+                                    <div>
+                                    <a href="./pages/detalle.html">
+                                    <img src="./assets/images/peli_5.jpg" alt="500 days of summer" width="300" loading="lazy">
+                                    </a>
+                                    </div>
+                                    <div>
+                                    <a href="./pages/detalle.html">
+                                    <img src="./assets/images/peli_6.jpg" alt="Amelie" width="300" loading="lazy">
+                                    </a>
+                                    </div>
+                                    <div>
+                                    <a href="./pages/detalle.html">
+                                    <img src="./assets/images/peli_7.jpg" alt="Midnight in Paris" width="300" loading="lazy">
+                                    </a>
+                                    </div>
+                                    <div>
+                                    <a href="./pages/detalle.html">
+                                    <img src="./assets/images/peli_8.jpg" alt="Fight Club" width="300" loading="lazy">
+                                    </a>
+                                    </div>
+                                </div> 
+                        <div class="boton">
                         <button>Anterior</button>
                         <button>Proximo</button>
+                        </div>
                     </section>
                     <hr>
-                    <section class="BasadasEnLibros">
+                    <section class="basadasEnLibros">
                         <h2>Basadas en libros</h2>
                         <div class="galeriaBasadasEnLibros">
                             <div>
@@ -133,16 +132,17 @@
                         </div>    
                     </section>
                 </main>
+
                 <footer>
                     <nav>
-                        <ul >
+                        <ul>
                             <li ><a  href="">Términos y condiciones</a></li>
                             <li ><a  href="">Preguntas frecuentes</a></li>
                             <li ><a  href="">Ayuda</a></li>
                             <li ><a  href="">Administrador Peliculas</a></li>
                         </ul>
                     </nav>
-                        <a href="#main">
+                        <a href="#main" class="position">
                         <i class="fa-solid fa-arrow-up"></i>
                         </a>
                         <p>todos los derechos reservados</p>
